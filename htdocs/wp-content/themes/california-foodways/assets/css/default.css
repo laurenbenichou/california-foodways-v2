@@ -1,0 +1,104 @@
+@import 'utilies';
+/*--------------------------------------------------------------
+ # Imports
+ --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ # Fonts
+ --------------------------------------------------------------*/
+@font-face {
+  font-family: 'cocogoosedemibold';
+  src: url('../fonts/cocogoose_pro_semilight-trial-webfont.woff2') format('woff2'), url('../fonts/cocogoose_pro_semilight-trial-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cocogooseregular';
+  src: url('../fonts/cocogoose_pro-trial-webfont.woff2') format('woff2'), url('../fonts/cocogoose_pro-trial-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/*--------------------------------------------------------------
+ # General
+ --------------------------------------------------------------*/
+body {
+  background-color: #fdd684;
+}
+hr {
+  background-color: #404040;
+  width: 40%;
+}
+/*--------------------------------------------------------------
+ # Typography
+ --------------------------------------------------------------*/
+h1 {
+  font-family: 'cocogooseregular', sans-serif;
+}
+h2, h3, h4, h5 {
+  font-family: 'cocogoosedemibold', sans-serif;
+}
+p, span {
+  font-family: 'Lato', sans-serif;
+}
+/*--------------------------------------------------------------
+ # Header
+ --------------------------------------------------------------*/
+.site-header {
+  text-align: center;
+}
+.site-header--title {
+  margin: 0;
+  font-size: 4.5rem;
+  text-shadow: 3px 2px 0px white;
+  text-transform: uppercase;
+}
+/*--------------------------------------------------------------
+ # Nav
+ --------------------------------------------------------------*/
+.main-navigation {
+  margin: 25px 0;
+  text-align: center;
+}
+.main-navigation a {
+  color: black;
+  font-family: 'cocogoosedemibold', sans-serif;
+}
+.main-navigation li {
+  display: inline-block;
+  margin-right: 1em;
+}
+.main-navigation li.menu-item--home {
+  border-bottom: 2px solid #de8e86;
+}
+.main-navigation li.menu-item--about {
+  border-bottom: 2px solid #a5ddf4;
+}
+.main-navigation li.menu-item--contact {
+  border-bottom: 2px solid #bac8a9;
+}
+/*--------------------------------------------------------------
+ # Main Container
+ --------------------------------------------------------------*/
+.site-content .is-most-recent {
+  border-top: 1px solid #404040;
+  border-bottom: 1px solid #404040;
+}
+/*--------------------------------------------------------------
+ # Home Page Post
+ --------------------------------------------------------------*/
+h3 {
+  margin: 0;
+}
+.hentry {
+  margin: 0;
+  padding: 16px 0;
+}
+.entry-title a {
+  text-decoration: none;
+  color: #404040;
+}
+.entry-content {
+  margin: 25px 0 0 0;
+}
+.entry-content p {
+  margin: 0;
+}

@@ -1,0 +1,148 @@
+/*--------------------------------------------------------------
+# Imports
+--------------------------------------------------------------*/
+@import 'utilies';
+@import 'variables';
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'cocogoosedemibold';
+    src: url('../fonts/cocogoose_pro_semilight-trial-webfont.woff2') format('woff2'),
+         url('../fonts/cocogoose_pro_semilight-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cocogooseregular';
+    src: url('../fonts/cocogoose_pro-trial-webfont.woff2') format('woff2'),
+         url('../fonts/cocogoose_pro-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  background-color: #FDD684;
+}
+
+hr {
+  background-color: #404040;
+  width: 40%;
+}
+// .bg-image-container {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: -2;
+//   &--california {
+//     opacity: 0.7;
+//     height: 100%;
+//   }
+// }
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+h1 {
+  font-family: 'cocogooseregular', sans-serif;
+}
+
+h2, h3, h4, h5 {
+	font-family: 'cocogoosedemibold', sans-serif;
+}
+
+p, span {
+  font-family: 'Lato', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.site-header {
+  text-align: center;
+  &--title {
+    margin:0;
+    font-size: 4.5rem;
+    text-shadow: 3px 2px 0px white;
+    text-transform: uppercase;
+  }
+}
+
+/*--------------------------------------------------------------
+# Nav
+--------------------------------------------------------------*/
+
+.main-navigation {
+  margin: 25px 0;
+	text-align: center;
+
+  a {
+    color: black;
+  	font-family: 'cocogoosedemibold', sans-serif;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 1em;
+
+    &.menu-item--home {
+      border-bottom: 2px solid map-get($colors, red);
+    }
+    &.menu-item--about {
+      border-bottom: 2px solid map-get($colors, blue);
+    }
+    &.menu-item--contact {
+      border-bottom: 2px solid map-get($colors, green);
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Main Container
+--------------------------------------------------------------*/
+
+.site-content {
+  .is-most-recent {
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+  }
+
+  // background-color: #FEFAF0;
+  // box-shadow: -1px 0 2px 0 rgba(0, 0, 0, .12), 1px 0 2px 0 rgba(0, 0, 0, .12), 0 1px 1px 0 rgba(0, 0, 0, .24);
+
+}
+
+/*--------------------------------------------------------------
+# Home Page Post
+--------------------------------------------------------------*/
+h3 {
+  margin: 0;
+}
+
+.hentry {
+  margin: 0;
+  padding: 16px 0;
+}
+
+.entry-title {
+  a {
+    text-decoration: none;
+    color: #404040;
+  }
+}
+
+.entry-content {
+  margin: 25px 0 0 0;
+  p {
+    margin: 0;
+  }
+}
